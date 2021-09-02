@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>GadgetsArena | Welcome to the best place for your tech stack</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="header--content container">
+        <h1 class="logo">
+          <a href="index.html">TechLab</a>
+        </h1>
+        <nav class="main-nav">
+          <ul class="menu">
+            <li class="menu-list">
+              <a href="#">Home</a>
+            </li>
+            <li class="menu-list">
+              <a href="#">Shop</a>
+            </li>
+            <li class="menu-list">
+              <a href="#">About</a>
+            </li>
+            <li class="menu-list">
+              <a href="#">Contact Us</a>
+            </li>
+            <a href="#" class="btn btn--cart"
+              ><i class="fas fa-shopping-cart"></i><span>Cart</span></a
+            >
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- hero section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero--content">
+          <h1 class="hero--title">
+            The best place to find massive <span>tech</span> gadgets
+          </h1>
+          <p class="hero--text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus
+            incidunt facilis dolorum sequi id repellat architecto possimus
+            consequatur quia! Laborum!
+          </p>
+          <a href="#" class="btn hero--btn">Read More &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- news letter -->
+    <section class="subscribe">
+      <div class="container">
+        <h2>Get Notified For New Updates!</h2>
+        <form>
+          <input type="text" placeholder="example@gamial.com" />
+          <a href="#" class="btn">Subscribe</a>
+        </form>
+      </div>
+    </section>
+
+    <!-- gallery -->
+    <section class="gallery">
+      <div class="container">
+        <div class="gallery--content">
+          <h2>The Latest Inventions Are Here</h2>
+          <div class="grid">
+            <img src="/pic1.jpg" alt="pic" />
+            <img src="/pic2.jpg" alt="pic" />
+            <img src="/pic3.jpg" alt="pic" />
+            <img src="/pic4.jpg" alt="pic" />
+            <img src="/pic5.jpg" alt="pic" />
+            <img src="/pic6.jpg" alt="pic" />
+            <img src="/pic7.jpg" alt="pic" />
+            <img src="/pic8.jpg" alt="pic" />
+            <img src="/pic9.jpg" alt="pic" />
+            <img src="/pic10.jpg" alt="pic" />
+            <img src="/pic11.jpg" alt="pic" />
+            <img src="/pic12.jpg" alt="pic" />
+          </div>
+          <a href="#" class="btn gallery--btn">View More &rarr; </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact form -->
+    <section class="contact">
+      <div class="contact--content">
+        <h2>How You Can Reach Us</h2>
+        <div class="form--details">
+          <form class="form">
+            <div>
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" placeholder="John " />
+            </div>
+            <div>
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" placeholder=" Doe" />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="johndoe@gmail.com" />
+            </div>
+
+            <a href="#" class="btn form--btn">Submit &rarr;</a>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div>
+          <a href="index.html">TechLab</a>
+          <p class="text">
+            Copyright &copy; <span class="year"></span>. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const date = document.querySelector('.year');
+      const year = new Date().getFullYear();
+      date.textContent = year;
+    </script>
+  </body>
+</html>
